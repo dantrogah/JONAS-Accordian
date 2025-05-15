@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Example</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        color: #343a40;
+        font-size: 24px;
+        height: 100vh;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav {
+        background-color: green;
+        grid-row: 1/-1;
+      }
+
+      menu {
+        background-color: blue;
+        grid-column: 2/-1;
+      }
+
+      section {
+        background-color: gray;
+      }
+
+      main {
+        background-color: yellowgreen;
+      }
+
+      aside {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <menu>Menu</menu>
+    <section>Email</section>
+    <main>Main</main>
+    <aside>Aside</aside>
+  </body>
+</html>

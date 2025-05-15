@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 18px;
+
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 200px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav {
+        color: #fff;
+        background-color: #343a40;
+        grid-row: 1/-1;
+      }
+
+      menu {
+        background-color: #7048e8;
+        grid-column: 2/-1;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+
+      button {
+        color: #fff;
+        background-color: #5f3dc4;
+        padding: 8px 12px;
+        border: none;
+        font-size: 18px;
+      }
+
+      button:last-child {
+        margin-left: auto;
+      }
+
+      section {
+        background-color: #e9ecef;
+      }
+
+      aside {
+        background-color: #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <menu>
+      <button>New</button>
+      <button>Reply</button>
+      <button>Forward</button>
+      <button>Mark unread</button>
+      <button>Trash</button>
+    </menu>
+    <section>Section</section>
+    <main>Main</main>
+    <aside>Aside</aside>
+  </body>
+</html>
